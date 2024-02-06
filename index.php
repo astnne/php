@@ -8,12 +8,9 @@
 <body>
   <h1>
     <?php 
-      $name = 'austin';
-      echo $name." was echoed at ".date('Y-m-d H:i:s').'<br>';
-      $list = [1,2,3];
-      foreach ($list as $value) {
-        echo $value.'<br>';
-      }
+      require 'test.php';
+      $newInstance = new Austin();
+      echo $newInstance->name;
     ?>
   </h1>
 </body>
